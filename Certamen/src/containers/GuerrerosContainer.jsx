@@ -11,6 +11,10 @@ export default function GuerrerosContainer() {
     setGuerreros((anteriores) => [...anteriores, nuevoGuerrero]);
   }
 
+  function eliminarGuerrero(id) {
+    setGuerreros((anteriores) => anteriores.filter((guerrero) => guerrero.id !== id));
+  }
+
   return (
     <div className="row gy-4">
       <section className="col-12" aria-labelledby="formulario-titulo">
@@ -27,7 +31,7 @@ export default function GuerrerosContainer() {
         <Typography variant="h5" component="h2" id="tropas-titulo">
           Tropas
         </Typography>
-        <GuerrerosTable guerreros={guerreros} />
+        <GuerrerosTable guerreros={guerreros} onDeleteGuerrero={eliminarGuerrero} />
       </section>
     </div>
   );

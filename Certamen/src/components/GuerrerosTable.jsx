@@ -1,6 +1,6 @@
-﻿import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
+import { Button, Chip, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 
-export default function GuerrerosTable({ guerreros }) {
+export default function GuerrerosTable({ guerreros, onDeleteGuerrero }) {
   return (
     <TableContainer>
       <Table aria-labelledby="tropas-titulo">
@@ -21,8 +21,14 @@ export default function GuerrerosTable({ guerreros }) {
               <TableCell>{guerrero.tipo}</TableCell>
               <TableCell>{guerrero.rango}</TableCell>
               <TableCell>{guerrero.combate}</TableCell>
-              <TableCell />
-              <TableCell />
+              <TableCell>
+                <Chip label={guerrero.tipo} color={guerrero.tipo === 'Orco' ? 'success' : 'error'} />
+              </TableCell>
+              <TableCell>
+                <Button variant="outlined" onClick={() => onDeleteGuerrero(guerrero.id)}>
+                  Asesinado por la aparición
+                </Button>
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
