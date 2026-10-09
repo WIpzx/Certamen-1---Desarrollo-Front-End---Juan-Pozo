@@ -1,4 +1,4 @@
-﻿# Certamen 1 - Desarrollo Frontend
+# Certamen 1 - Desarrollo Frontend
 
 Aplicación React para administrar los guerreros del ejército de Sauron.
 
@@ -11,6 +11,7 @@ Aplicación React para administrar los guerreros del ejército de Sauron.
 
 ## Ejecución
 ```
+cd Certamen
 npm install
 npm run dev
 ```
