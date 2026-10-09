@@ -2,7 +2,7 @@ import { Button, Chip, Table, TableBody, TableCell, TableContainer, TableHead, T
 
 export default function GuerrerosTable({ guerreros, onDeleteGuerrero }) {
   return (
-    <TableContainer sx={{ bgcolor: '#faf7f1', borderRadius: 1, border: '1px solid #ac9d80' }}>
+    <TableContainer sx={{ bgcolor: '#c5bbae', borderRadius: 1, border: '1px solid #ac9d80' }}>
       <Table aria-labelledby="tropas-titulo">
         <TableHead sx={{ bgcolor: '#302b29', '& .MuiTableCell-root': { color: '#c6b793', fontWeight: 600 } }}>
           <TableRow>
