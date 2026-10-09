@@ -1,4 +1,6 @@
-﻿import { AppBar, Card, CardContent, CssBaseline, Toolbar, Typography } from '@mui/material';
+import { AppBar, Card, CardContent, CssBaseline, Toolbar, Typography } from '@mui/material';
+
+import GuerreroForm from './components/GuerreroForm.jsx';
 
 export default function App() {
   return (
@@ -22,6 +24,7 @@ export default function App() {
                 <Typography variant="h5" component="h2" id="formulario-titulo">
                   Formulario de guerreros
                 </Typography>
+                <GuerreroForm />
               </CardContent>
             </Card>
           </section>
