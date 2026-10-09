@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Card, CardContent, Typography } from '@mui/material';
 import GuerreroForm from '../components/GuerreroForm.jsx';
+import GuerrerosTable from '../components/GuerrerosTable.jsx';
 
 export default function GuerrerosContainer() {
   const [guerreros, setGuerreros] = useState([]);
@@ -26,6 +27,7 @@ export default function GuerrerosContainer() {
         <Typography variant="h5" component="h2" id="tropas-titulo">
           Tropas
         </Typography>
+        <GuerrerosTable guerreros={guerreros} />
       </section>
     </div>
   );
