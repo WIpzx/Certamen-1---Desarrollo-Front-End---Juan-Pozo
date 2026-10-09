@@ -79,7 +79,7 @@ export default function GuerreroForm({ onCreateGuerrero }) {
         </FormControl>
       </div>
       <div className="col-12">
-        <Button variant="contained" type="submit">Registrar Guerrero</Button>
+        <Button variant="contained" type="submit" sx={{ bgcolor: '#743b3b', '&:hover': { bgcolor: '#5e3030' } }}>Registrar Guerrero</Button>
       </div>
     </form>
   );

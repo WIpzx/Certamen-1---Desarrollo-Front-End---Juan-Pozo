@@ -1,10 +1,16 @@
-﻿# Certamen 1 — Anillo Único
+﻿# Certamen 1 - Desarrollo Frontend
 
-Proyecto de Desarrollo Frontend de la Universidad Técnica Federico Santa María.
+Aplicación React para administrar los guerreros del ejército de Sauron.
 
-Tecnologías: React, Vite, Material UI, Emotion y grillas y utilidades de Bootstrap.
+## Tecnologías
 
-```bash
+- React
+- Vite
+- Material UI
+- Bootstrap
+
+## Ejecución
+```
 npm install
 npm run dev
 ```
