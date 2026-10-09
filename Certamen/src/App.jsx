@@ -1,6 +1,6 @@
-import { AppBar, Card, CardContent, CssBaseline, Toolbar, Typography } from '@mui/material';
+import { AppBar, CssBaseline, Toolbar, Typography } from '@mui/material';
 
-import GuerreroForm from './components/GuerreroForm.jsx';
+import GuerrerosContainer from './containers/GuerrerosContainer.jsx';
 
 export default function App() {
   return (
@@ -17,23 +17,7 @@ export default function App() {
         </Toolbar>
       </AppBar>
       <main className="container py-4">
-        <div className="row gy-4">
-          <section className="col-12" aria-labelledby="formulario-titulo">
-            <Card variant="outlined">
-              <CardContent>
-                <Typography variant="h5" component="h2" id="formulario-titulo">
-                  Formulario de guerreros
-                </Typography>
-                <GuerreroForm />
-              </CardContent>
-            </Card>
-          </section>
-          <section className="col-12" aria-labelledby="tropas-titulo">
-            <Typography variant="h5" component="h2" id="tropas-titulo">
-              Tropas
-            </Typography>
-          </section>
-        </div>
+        <GuerrerosContainer />
       </main>
     </>
   );
